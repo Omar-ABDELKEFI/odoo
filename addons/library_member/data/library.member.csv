@@ -1,0 +1,11 @@
+"id","card_number","partner_id/id"
+library_member_001,"CARD001",res_partner_john
+library_member_002,"CARD002",res_partner_jane
+library_member_003,"CARD003",res_partner_michael
+library_member_004,"CARD004",res_partner_lisa
+library_member_005,"CARD005",res_partner_david
+library_member_006,"CARD006",res_partner_eric
+library_member_007,"CARD007",res_partner_francois
+library_member_008,"CARD008",res_partner_bob
+library_member_009,"CARD009",res_partner_stuart
+library_member_010,"CARD010",res_partner_peter

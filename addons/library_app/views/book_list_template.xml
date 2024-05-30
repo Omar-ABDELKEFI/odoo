@@ -1,0 +1,44 @@
+<odoo>
+  <template id="book_list_template" name="Book List">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></link>
+     <style>
+     .book-entry {
+  background-color: #f9f9f9;
+}
+
+.book-name {
+  font-weight: bold;
+}
+
+.book-date-published {
+  color: #6c757d;
+}
+
+.book-publisher {
+  color: #007bff;
+}
+     </style>
+
+    <div id="wrap" class="container mt-5">
+      <h1 class="mb-4">Books</h1>
+      <div class="row mb-2 font-weight-bold">
+        <div class="col-md-4">Namqsdsqdsqe</div>
+        <div class="col-md-4">Date Published</div>
+        <div class="col-md-4">Publisher</div>
+      </div>
+      <t t-foreach="books" t-as="book">
+        <div class="row mb-2 p-2 border rounded book-entry">
+          <div class="col-md-4">
+            <span t-field="book.name" class="book-name"/>
+          </div>
+          <div class="col-md-4">
+            <span t-field="book.date_published" class="book-date-published"/>
+          </div>
+          <div class="col-md-4">
+            <span t-field="book.publisher_id" class="book-publisher"/>
+          </div>
+        </div>
+      </t>
+    </div>
+  </template>
+</odoo>
